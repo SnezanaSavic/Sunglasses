@@ -1,0 +1,509 @@
+
+
+
+
+
+
+/*FONTS*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap');
+
+
+
+
+
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2.6rem;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+
+    font-family: 'Playfair Display', serif;
+    color: #2C2D3C;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+
+.clearfix:after{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1500px;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+
+}
+h2{
+    font-size: 3.2rem;
+    line-height: 4.3rem;
+    letter-spacing: 1.06px;
+    color: #2C2D3C;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    display: inline-block;
+
+}
+/*.services h2,
+.contact h2{
+    margin-left: 685px;
+}*/
+.d-flex{
+    display: flex;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flexbox;
+}
+
+.wrap{
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+
+.justify-between{
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-flex-pack: justify;
+}
+
+.justify-end{
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-flex-pack: end;
+}
+
+.align-items-center{
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-flex-align: center;
+}
+
+.align-items-start{
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    -ms-flex-align: start;
+}
+
+.two-column{
+    flex: 0 0 48%;
+    -webkit-flex: 0 0 48%;
+    -moz-flex: 0 0 48%;
+    -ms-flex:0 0 48%;
+}
+.three-column{
+    flex: 0 0 30%;
+    -webkit-flex: 0 0 30%;
+    -moz-flex: 0 0 30%;
+    -ms-flex:0 0 30%;
+}
+
+.four-column{
+    flex: 0 0 24%;
+    -webkit-flex: 0 0 24%;
+    -moz-flex: 0 0 24%;
+    -ms-flex:0 0 24%;
+}
+
+
+h2{
+
+    transition: all 0.5s linear;
+    position: relative;
+}
+h2.active,
+h2:hover{
+    color:#EBB970;
+}
+h2:before{
+    content: '';
+    width: 0;
+    display: block;
+    height: 2px;
+    background:#EBB970;
+    transition: all 0.5s linear;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    left: 0px;
+    margin-top: 22px;
+
+}
+h2.active:before,
+h2:hover:before{
+    width: 100%;
+
+}
+/*header start*/
+
+
+
+
+header .main-menu{
+    list-style: none;
+    padding: 0;
+
+
+}
+header .main-menu li{
+    margin-left: 62px;
+}
+header .main-menu li:last-of-type{
+    margin-right: 180px;
+}
+header .main-menu li a{
+    display: block;
+    padding: 31px 0 20px 0;
+    color: #2C2D3C;
+    letter-spacing: 0.46px;
+    line-height: 1.9rem;
+    font-size: 1.4rem;
+    text-transform:uppercase;
+    transition: all 0.5s linear;
+    position: relative;
+
+}
+
+header .main-menu li a.active,
+header .main-menu li a:hover{
+    color: #2C2D3C;
+}
+
+header .main-menu li a:before{
+    content: '';
+    width: 0;
+    display: block;
+    height: 2px;
+    background:#1085EA;
+    transition: all 0.5s linear;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+header .main-menu li a.active:before,
+header .main-menu li a:hover:before{
+    width: 100%;
+}
+
+header div .logo{
+    text-align: left;
+    padding: 20px 160px 12px;
+}
+
+/*home*/
+.home{
+    padding: 211px 0 181px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom:148px;
+
+
+
+
+
+
+}
+h1{
+    padding: 42px 23px 62px 38px;
+    background-color: #2C2D3C;
+    color:#FFFFFF;
+    font-family: 'Playfair Display', serif;
+    font-size: 6rem;
+    line-height: 8rem;
+    letter-spacing: 1.99px;
+    text-align: left;
+    margin-left: 179px;
+
+
+}
+/*about*/
+
+article .about-title{
+
+    text-align: left;
+
+    margin-bottom: 44px;
+
+}
+.link-button{
+    display: inline-block;
+    padding: 10px 13px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    background-color: #EBB970;
+    color: #FFFFFF;
+}
+
+.about{
+    padding: 148px 0;
+    position: relative;
+}
+.about .about-content{
+    flex: 0 0 46%;
+    -webkit-flex: 0 0 46%;
+    -moz-flex: 0 0 46%;
+    -ms-flex: 0 0 46%;
+
+}
+.about > img{
+    position: absolute;
+    right:  0;
+    top: 0;
+    width: 32%;
+    margin-right: 180px;
+    margin-bottom: 32px;
+
+
+
+}
+
+.about-paragraph{
+    margin-bottom: 22px;
+    line-height: 2.6rem;
+    letter-spacing: 0.7px;
+    font-size: 1.8rem;
+    color: #2C2D3C;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about h2{
+    padding-top: 100px;
+}
+/*servics*/
+.services{
+    margin-bottom: 81px;
+}
+
+.services h2{   
+    margin-left:750px;
+    margin-bottom: 68px;
+}
+.services div article a{
+    padding: 24px 32px 24px 33px;
+    color: #FFFFFF;
+    background-color:#EBB970;
+    text-align: center;
+    border-radius: 70%;
+    margin-bottom: 17px;
+    position: relative;
+
+}
+.services div article{
+    padding: 49px 100px 50px 100px;
+    background-color: #2C2D3C;
+    color:#FFFFFF;
+    text-align: center;
+    margin-right: 30px;
+}
+.services div article:first-of-type{
+    margin-left: 179px;
+}
+.services div article:last-of-type{
+    margin-right:180px;
+}
+
+.services div article h4{
+    color: #FFFFFF;
+    margin: 17px 0;
+    font-size: 2.4rem;
+    line-height: 3rem;
+}
+.services div article p{
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+
+}
+
+/*achievements*/
+.achievements{
+    margin: 113px 0 81px 0;
+    padding: 169px 157px 142px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#FFFFFF;
+
+    background-color:#EBB970;
+    opacity: 0.8;
+
+}
+.achievements div div h2{
+    color: #FFFFFF;
+    font-size: 5rem;
+    line-height: 3rem;
+    margin-bottom: 33px;
+}
+.achievements div div p{
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    text-transform: uppercase;
+}
+
+/*products*/
+.products{
+    text-align: center;
+    padding: 90px 0;
+    /*transition: all 0.5s linear;*/
+}
+.products h2{
+    margin-bottom: 81px;
+    font-size: 3.2rem;
+    line-height: 4.3rem;
+    letter-spacing: 1.06px;
+}
+.products .products-item img{
+    display: block;
+    width: 100%;
+    transition: all 0.5s linear;
+    
+}
+
+.products .products-item{
+    position: relative;
+    overflow: hidden;
+
+}
+.products .products-item .link-button{
+    position:absolute;
+    bottom: 94px;
+    left: 50%;
+    transform: translateX(-50%);
+    display:none;
+
+}
+.products .products-item:hover .link-button{
+    display: block;
+    width: 90%;
+
+}
+/*.products .products-item:hover img{
+    transform: scale(0.2);
+
+}*/
+.products .products-item img{
+    margin-bottom: 23px;
+}
+.products .products-item h4{
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-bottom: 6px;
+    color: #2C2D3C;
+    font-weight: normal;
+    margin-top:23px;
+}
+
+.products .products-item p{
+    color: #2C2D3C;
+
+}
+/*contact*/
+.contact h2{
+    margin-left: 680px;
+    margin-bottom: 93px;
+}
+.contact .contact-form .form-element{
+    text-align: left;
+    line-height: 2.6rem;
+    margin-bottom: 45px;
+    letter-spacing: 0.72px;
+    color:#2C2D3C;
+    padding: 11px 105px 9px 18px;
+    display: inline;
+    margin-right: 30px;
+
+}
+.contact .contact-form .link-button{
+    border: none;
+    margin-bottom: 113px;
+}
+textArea{
+    width: 700px;
+   
+}
+.contact aside div a{
+
+    color: #2C2D3C;
+    text-align: left;
+    line-height: 2.6rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.82px;
+    margin-bottom:20px;
+
+
+}
+.contact aside div .fa-solid{
+    margin-right: 30px;
+
+}
+.contact-info{
+    margin-right: 350px;
+    margin-bottom: 390px;
+}
+
+.contact  .contact-data .link-button{
+    padding: 5px 41px 5px 41px;
+}
+
+
+/*footer*/
+
+
+footer{
+
+    background-color: #EBB970;
+
+}
+footer div ul li{
+    list-style: none;
+    margin: 30px 31px 20px;
+    text-align: center;
+
+}
+footer div ul li a{
+    color: #2C2D3C;
+    width: 20px;
+    margin-bottom:20px;
+}
+
